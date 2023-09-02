@@ -101,7 +101,7 @@ Submit as follows:
 
 1. "File" > "Download as" > "Notebook (.ipynb)".
 
-2. Go to https://tyler.caraza-harter.com/yiyin/su23/submission.html.
+2. Go to https://tyler.caraza-harter.com/yiyin/fa23/submission.html.
 
 3. Select P1.
 
