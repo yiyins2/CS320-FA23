@@ -129,6 +129,10 @@ Some functions we use a lot in 220/320 are abs, dir, float, input, int, len, lis
 
 In other cases where you want to divide 7 by 2 and get an int, you would use `7 // 2`.
 
+**Note**: Python has changed over the years, and their are some differences between Python 2 and Python 3. At this point, Python 2 is 
+no longer supported and is only used in legacy projects; however, it's good to be aware of the differences in case you ever work with Python 2 code.
+In Python 2, `7 / 2` returns `3` as an `int`.
+
 **IMPORTANT**: After solving every question, we recommend running the tester, to confirm whether your code is able to clear the auto-grader tests locally on your VM. For example, after solving q1, if you run the tester, you will see the output will look similar to the below image:
 
 <img src="img/tester.png">
@@ -149,14 +153,14 @@ error
 
 Notes:
 1. we don't need to specify the type of our variables as in some languages (e.g., Java) -- Python knows x is an `int` because we assigned `4`, which is an int.  Variable types are not fixed after creation as in some languages (e.g., Go) -- we could later run `x = "howdy"` if we wanted to
-2. in Python, a `bool` is `True` or `False`.  We use the `and`, `or`, and `not` operators (in other programming languages, these operators are often expressed as `&&`, `||`, and `!`).
+2. in Python, a `bool` is `True` or `False`.  We use the `and`, `or`, and `not` operators to operate on `bool`s. In other programming languages, these operators are often expressed as `&&`, `||`, and `!`.
 
 ### Q3: ignoring case, does `word` end with the suffix "esque"?
 
 Complete the following to answer:
 
 ```python
-word = "KAEKAESQUE"
+word = "KAFKAESQUE"
 suffix_match = ???? # .endswith(...) method not allowed for this question! (practice slicing)
 suffix_match
 ```
@@ -177,7 +181,7 @@ Python parameters may be filled with positions arguments, keyword arguments, or 
 1. https://docs.python.org/3/tutorial/controlflow.html#defining-functions
 2. https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions
 
-In Python, indents are very important.  The code inside a function/if/loop is indented (Python doesn't use `{` and `{` to indicate this, as in Java and many other languages).
+In Python, indents are very important.  The code inside a function/conditional/loop is indented (Python doesn't use `{` and `}` to indicate this, as in Java and many other languages).
 
 ### Q4: what is `check_sum(0.1, 0.2, 0.3)`?
 
@@ -201,6 +205,7 @@ status
 ```
 
 https://docs.python.org/3/tutorial/controlflow.html#if-statements
+
 
 ### Requirement: `nums` list and `smart_sum` function
 
