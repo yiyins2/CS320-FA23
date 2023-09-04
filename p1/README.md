@@ -263,7 +263,7 @@ rows = [
 ]
 ```
 
-Note that `rows` is a list of lists.  Each inner list contains two ints and one dict (dictionary).  For complicated nested structures like this, it's often helpful to visualize the stack of frames and heap of objects in PythonTutor: https://pythontutor.com/live.html#mode=edit.
+Note that `rows` is a list of lists.  Each inner list contains some number of ints and one dict (dictionary).  For complicated nested structures like this, it's often helpful to visualize the stack of frames and heap of objects in PythonTutor: https://pythontutor.com/live.html#mode=edit.
 
 You could copy the above to visualize it, or use the following link for your convenience:
 
@@ -367,13 +367,17 @@ When reading documentation, start by focusing on parameters that can't take defa
 
 Access the exchange rate for Canadian dollars in the dictionary and multiply it by the amount of US dollars you have to find out how many Canadian dollars you can get. You can round to the nearest 0.01 dollar (1 cent).
 
+**Important**: Note the difference between `json.load()` and `json.loads()`. The first loads json data from a file, whereas the second loads json data from a
+Python string.
+
+
 ### Requirement: `divide` function
 
 Normally, if you divide by 0, you'll get an exception.  Write a function that does division; when there is such an exception, is should catch it and return the float `nan` (not a number).
 
 How to catch exceptions: https://docs.python.org/3/tutorial/errors.html#handling-exceptions
 
-To get `nan`, you can convert a string: `float("nan")`
+To get the Python `nan` object, you can convert a string: `float("nan")`
 
 Requirement: the function should only catch the exception that gets thrown for division by zero (not other exceptions).  To find the name of this exception, you could try doing a simple division by zero in a cell and observe what gets thrown.
 
@@ -391,7 +395,7 @@ We have downloaded the data for each year to a file in the `home-computers` dire
 
 Create a dictionary called `years` like this:
 
-* **key**: a year (int), corresponding to a year of data in the directory.  Don't hardcode the years -- use `os.listdir` and extract the year from each filename (right before the first `.`). Check if the file is a CSV by checking if it ends with ".csv". Don't hardcode the years in the dictionary - use the year extracted from the file name as the key.
+* **key**: a year (`int`), corresponding to a year of data in the directory.  Don't hardcode the years -- use `os.listdir` and extract the year from each filename (right before the first `.`). Check if the file is a CSV by checking if it ends with ".csv". Don't hardcode the years in the dictionary - use the year extracted from the file name as the key.
 * **value**: a pandas DataFrame corresponding to the CSV for that year.  Skip the first row from each CSV file: https://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.read_csv.html.  Use `set_index` (https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.set_index.html) to make "Geographic Area Name" the index of the DataFrame.  This will let you easily look up state stats by name (instead of by row number) later.
 
 ### Q17: what are the keys in `years`?
@@ -400,7 +404,7 @@ Answer with a sorted list.
 
 ### Q18: how many households did Wisconsin have in 2021?
 
-The answer is in the column with name "Estimate!!Total" and row with NAME "Wisconsin".  The hardcoding way to answer (not allowed) would something like:
+The answer is in the column with name "Estimate!!Total" and row with NAME "Wisconsin".  The hardcoding way to answer (not allowed) would be something like:
 
 ```python
 df = years[2021]
@@ -421,7 +425,7 @@ If you have a Pandas Series `s`, you can do various aggregations on it, like `.m
 
 The margin of error is given in the "Margin of Error!!Total!!No Computer" column.
 
-You can divide one Pandas Series by another on an elementwise basis like this: `s3 = s2 / s1`.  You can then compute `s3.max()`.  Or better, see if you can combine everything into a one-line computation.
+You can divide one Pandas Series by another on an element-wise basis like this: `s3 = s2 / s1`.  You can then compute `s3.max()`.  Or better, see if you can combine everything into a one-line computation.
 
 ### Q21: for Wisconsin and adjacent states, what percent of households are estimated to be without a computer? (2021)
 
@@ -433,13 +437,13 @@ Answer with a `dict`, where the key is the state name, and the value is the perc
 
 ### Q22: same question, but answer with a bar plot.
 
-If you have a Series `s`, you can use `s.plot.bar()` or `s.plot.barh()`.  The labels of x-axis and y-axis should be as shown in the below graph.
+If you have a Series `s`, you can use `s.plot.bar()` or `s.plot.barh()`.  The labels of the x-axis and y-axis should be as shown in the below graph.
 
 Example:
 
 <img src="img/q22.png">
 
-### Q23: how as the number of WI households without computers changed over recent years?
+### Q23: how has the number of WI households without computers changed over recent years?
 
 Answer with a plot like this: The labels of x-axis and y-axis should be as shown in the below graph.
 
@@ -475,9 +479,9 @@ We have a copy of the flask repo in `flask.zip`.  Run `unzip flask.zip`.  If `un
 
 If you pass `cwd="????"` to `check_output`, you can run the `git log` command inside the `flask` directory that was created when you ran the `git clone` command.  "CWD" stands for "change working directory".
 
-`check_output` function in the `subprocess` module (https://docs.python.org/3.10/library/subprocess.html#subprocess.check_output) returns a byte sequence; consider converting it to a string ("utf-8" encoding) and splitting it by newline (`\n`) to get a list. This will be useful for answering following questions.
+The `check_output` function in the `subprocess` module (https://docs.python.org/3.10/library/subprocess.html#subprocess.check_output) returns a byte sequence; consider converting it to a string ("utf-8" encoding) and splitting it by newline (`\n`) to get a list. This will be useful for answering the following questions.
 
-**Important:** if you use "git checkout" commands (as required for following exercises) to switch the current (HEAD) commit, the output of "git log" will change (it will show the current commit and prior ones, but not future commits).  You may want to add some code that runs "git checkout main" to bring the HEAD back to the latest commit.  Otherwise your answer to this question might only be correct the first time you run the notebook.
+**Important:** if you use `git checkout` commands (as required for following exercises) to switch the current (HEAD) commit, the output of `git log` will change (it will show the current commit and prior ones, but not future commits).  You may want to add some code that runs `git checkout main` to bring the HEAD back to the latest commit.  Otherwise your answer to this question might only be correct the first time you run the notebook.
 
 ### Q26: What are the commit numbers of the 10 earliest commits?
 
@@ -504,7 +508,7 @@ Date:   Wed Dec 22 17:10:24 2021 -0800
 
 This means the code was approved by David Lord (who has permission to make changes), but the code change was written and proposed by olliemath.
 
-Whenever a line from `git log` contains the text "Merge pull request" and "/", extract the username immediately before the "/".  Count occurences of usernames in dictionary like the following:
+Whenever a line from `git log` contains the text "Merge pull request" and "/", extract the username immediately before the "/".  Count occurences of usernames in a dictionary like the following:
 
 ```
 {'pallets': 204,
@@ -552,7 +556,7 @@ except subprocess.???? as e:
 ```
 
 Note that `stderr=subprocess.STDOUT` tells `check_output` that error
-messages should be treated as regular output -- that let's us capture
+messages should be treated as regular output -- that lets us capture
 the output with `e.output`.
 
 ### Q30: what is faster for looping over a DataFrame, `iterrows` or `itertuples`?
@@ -574,11 +578,13 @@ Answer with a plot as follows:
 If you have a DataFrame generated from `rand_df` called `df`, you can take a measurement like this:
 
 ```python
-t0 = time()
+import time
+
+t0 = time.time()
 # HOW LONG DOES THIS TAKE TO RUN, FOR DATAFRAMES WITH DIFFERENT NUMBERS OF ROWS?
 for row in df.iterrows():
     pass
-t1 = time()
+t1 = time.time()
 ```
 
 Your plot should look something like this (we're hiding the legend labels so it's a surprise for you which is faster). The labels of x-axis and y-axis should be as shown in the below graph.
@@ -612,9 +618,9 @@ for idx in df.index:
 
 ### Q32: what is faster, a loop or `.apply`?
 
-Answer this one with a line plot similar as to the last two.  You should, however, have measurements going up to 20000 rows.
+Answer this one with a line plot similar to the last two.  You should, however, have measurements going up to 20000 rows.
 
-For the two code snippets to measure:
+The two code snippets to measure:
 
 ```python
 # HOW LONG DOES THIS TAKE TO RUN, FOR DATAFRAMES WITH DIFFERENT NUMBERS OF ROWS?
