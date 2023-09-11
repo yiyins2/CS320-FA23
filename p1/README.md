@@ -35,7 +35,7 @@ console.
 
 2. Run `pip3 install pandas==1.4.4 matplotlib==3.5.3`
 
-3. Run `git clone https://github.com/yiyins2/CS320-SU23.git`
+3. Run `git clone https://github.com/yiyins2/CS320-FA23.git`
 
 4. Go to `http://YOUR_IP_ADDRESS:2020/` in the browser (sign in, if prompted)
 
@@ -77,7 +77,7 @@ some code, output answer
 
 2. "File" > "Save Notebook"
 
-3. From an SSH session, navigate to the CS320-SU23/p1 directory
+3. From an SSH session, navigate to the CS320-FA23/p1 directory
 
 4. Run `python3 tester.py p1.ipynb` and work on fixing any issues
 
