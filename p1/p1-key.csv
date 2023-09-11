@@ -19,7 +19,7 @@ question,type,value,notes
  [1, 6, 7, 8, {'x': 8, 'y': 5}],
  [3, 404, 9, {'x': 9, 'y': 2, 'z': 4}]]",
 14,float,1353.73,tolerance=0.5
-15,float,1.5,
+15,int,1,
 16,float,"float(""nan"")",
 17,list,"[2017, 2018, 2019, 2020, 2021]",
 18,int,2401818,
