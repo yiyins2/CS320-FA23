@@ -4,4 +4,4 @@
 * [p1](./p1)
 
 ## Labs
-* [lab 1](./labs/lab1.md)
+* [lab 2](./labs/lab2.md)
