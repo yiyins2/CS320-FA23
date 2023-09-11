@@ -381,7 +381,7 @@ To get the Python `nan` object, you can convert a string: `float("nan")`
 
 Requirement: the function should only catch the exception that gets thrown for division by zero (not other exceptions).  To find the name of this exception, you could try doing a simple division by zero in a cell and observe what gets thrown.
 
-### Q15: what is `divide(3, 0)`?
+### Q15: what is `divide(3, 2)`?
 
 ### Q16: what is `divide(0, 0)`?
 
@@ -485,7 +485,8 @@ The `check_output` function in the `subprocess` module (https://docs.python.org/
 
 ### Q26: What are the commit numbers of the 10 earliest commits?
 
-Answer with a list.  Commits with earlier dates should be later in the list. You don't need to sort the commits by time. Please directly use the raw order provided by `git log`. 
+Answer with a list. Commits with earlier timestamp should be later in the list. 
+(Hint: Since `git log` puts earlier commits later in the output, you don't need to reorder the commits.)
 
 ### Q27: what did the `README` file contain after the 100th commit?
 
