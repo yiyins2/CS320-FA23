@@ -40,8 +40,9 @@ If you were able to configure the SSH key properly in Step 3, follow
 
 ## Step 5b [Alternative]: Connecting without SSH
 
-If you couldn't configure the SSH key, follow [these
-directions](connect-alt.md) instead.
+Please only consider following [these
+directions](connect-alt.md) if you couldn't configure the SSH key. Using this option may 
+cause problem in the long run. 
 
 ## Step 6: Setting up Jupyter
 
