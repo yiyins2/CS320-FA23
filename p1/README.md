@@ -2,7 +2,7 @@
 
 ## Corrections/Clarifications
 
-* none yet
+1. (Sept 11th. 22:55) Corrected Q15 answer key to float 1.5. 
 
 ## Overview
 
