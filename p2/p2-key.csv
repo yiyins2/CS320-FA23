@@ -1,0 +1,11 @@
+question,type,value,notes
+1,float,2.8333333333333335,
+2,float,1.3043478260869565,
+3,dict,"{'55-64': 12, '45-54': 8, '65-74': 3, '25-34': 3, '>74': 3, '35-44': 1}",
+4,int,11,
+5,int,5,
+6,Figure,plt.Figure(),
+7,Figure,plt.Figure(),
+8,Figure,plt.Figure(),
+9,int,13,
+10,float,6.49,
