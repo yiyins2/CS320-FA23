@@ -52,9 +52,9 @@ As last time, your notebook should have a comment like this:
 
 You'll hand in 4 files:
 * p2.ipynb
-* loans.py (first module developed in lab)
+* loans.py (module developed in lab 4)
 * module_tester.py
-* search.py (second module developed in lab)
+* search.py (module developed in lab 5)
 
 Combine these into a zip by running the following in the `p2` directory:
 
@@ -90,15 +90,15 @@ The `__init__` of your `Bank` class should check that the given name appears in 
 
 ### wi.zip
 
-The `__init__` should also read the loans from the CSV inside `wi.zip` for the given bank.  You already learned how to read text from a zip file in lab using `TextIOWrapper` and the `zipfile` module.
+The `__init__` should also read the loans from the CSV inside `wi.zip` for the given bank, and store them in a list in the `Bank` object. You already learned how to read text from a zip file in lab using `TextIOWrapper` and the `zipfile` module. The list should be an attribute of the `Bank` object.
 
 Read the documentation and example for how to read CSV files with `DictReader` here: https://docs.python.org/3/library/csv.html#csv.DictReader.  You can combine this with what you learned about zipfiles.  When you create a `DictReader`, just pass in a `TextIOWrapper` object instead of a regular file object.
 
-As your `__init__` loops over the loan `dict`s, it should skip any that don't match the bank's `lei`.  The loan dicts that match should get converted to `Loan` objects and appended to a list, stored as an attribute in the `Bank` object.
+As your `__init__` loops over the loan `dict`s, it should skip any that don't match the bank's `lei`.  The loan dicts that match should get converted to `Loan` objects and appended to end of the loans list. The order of loans in your list should be the same as they appear in the CSV file.
 
 ### Special Methods
 
-We don't tell you what to call the attribute storing the loans, but you should be able to print the last loan like this:
+We aren't enforcing the name of the attribute storing the list of loans, but you should be able to print the last loan like this:
 
 ```python
 print(uwcu.SOME_ATTRIBUTE_NAME[-1])
@@ -110,7 +110,7 @@ We can check how many loans there are with this:
 print(len(uwcu.SOME_ATTRIBUTE_NAME))
 ```
 
-For convenience, we want to be able to directly use brackets and `len` directly on `Bank` objects, like this:
+To keep the interface consistent, we want to be able to directly use brackets and `len` directly on `Bank` objects, like this:
 * `uwcu[-1]`
 * `len(uwcu)`
 
@@ -167,9 +167,11 @@ Finish the `Node` and `BST` classes from [lab 5](../labs/bst-groups) (if you hav
 
 **Before you moving on to Part 3 ...** 
 
-Add a special method to `BST` so that if `t` is a `BST` object so that it is possible to lookup items with `t["some key"]` instead of `t.root.lookup("some key")`.
+Add a special method to `BST` so that for any `BST` object `t`, we can lookup items with `t["some key"]` instead of `t.root.lookup("some key")`.
 
 ## Part 3: First Home Bank Analysis
+
+Please complete the rest of this project in `p2.ipynb`.
 
 For the following questions, create a `Bank` object for the bank named "First Home Bank".
 
