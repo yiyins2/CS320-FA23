@@ -57,8 +57,8 @@ that wouldn't embarrass you on a resume):
 
 <img src="1.png" width=600>
 
-**Important:** for participation credit, fill [this form](https://forms.gle/L453Z78V8Ckt2y2U7) so that we know you
-  completed this part.
+### Important:
+To obtain point for Lab 3, fill [this form](https://forms.gle/dyr3XDG8m4NYTvGd9) so that we know you completed this part.
 
 ## Step 2: SSH Keys
 
