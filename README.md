@@ -5,3 +5,5 @@
 
 ## Labs
 * [lab 2](./labs/lab2.md)
+
+* [lab 3](./labs/lab3.md)
