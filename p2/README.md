@@ -90,7 +90,7 @@ The `__init__` of your `Bank` class should check that the given name appears in 
 
 ### wi.zip
 
-The `__init__` should also read the loans from the CSV inside `wi.zip` for the given bank, and store them in a list in the `Bank` object. You already learned how to read text from a zip file in lab using `TextIOWrapper` and the `zipfile` module. The list should be an attribute of the `Bank` object.
+The `__init__` should also read the loans from the `wi.csv` inside `wi.zip` for the given bank, and store them in a list in the `Bank` object. You already learned how to read text from a zip file in lab using `TextIOWrapper` and the `zipfile` module. The list should be an attribute of the `Bank` object.
 
 Read the documentation and example for how to read CSV files with `DictReader` here: https://docs.python.org/3/library/csv.html#csv.DictReader.  You can combine this with what you learned about zipfiles.  When you create a `DictReader`, just pass in a `TextIOWrapper` object instead of a regular file object.
 

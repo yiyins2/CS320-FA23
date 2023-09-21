@@ -2,7 +2,7 @@
 
 As you deal with bigger datasets, those datasets will often be
 compressed.  Compressed means that the format takes advantage of
-patterns and redundancy in data to same a bigger file in less space.
+patterns and redundancy in data to store a bigger file in less space.
 
 For example, say you have a string like this: "HAHAHAHAHAHAHAHAHAHA".
 You should imagine inventing a notation for representing that string

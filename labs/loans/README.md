@@ -237,8 +237,8 @@ Requirements:
 * some loans have a second applicant (but no more) -- you'll know there is a second applicant when `values["co-applicant_age"] != "9999"`.  In that case, `self.applicants` should contain two `Applicant` objects, with the info from the second coming from the `values["co-applicant_age"]` and `values["co-applicant_race-????"]` entries.
 
 Manually test your `Loan` class from your notebook with a few snippets:
-* `loan.interest_rate` should be `3.0`
-* `loan.applicants` should be `[Applicant('55-64', ['White'])]`
+* `loan.interest_rate` should be `2.5`
+* `loan.applicants` should be `[Applicant('35-44', ['White']), Applicant('35-44', ['White'])]`
 * choose a couple more...
 
 ### `__str__` and `__repr__`
@@ -259,7 +259,8 @@ terms, but for simplicity, we'll ignore that here.
 The `yearly_amounts` method in the `Loan` class should be a generator
 that yields loan amounts, as the loan is payed off over time.  Assume
 that each year, a single payment is made, after interest is
-calculated.
+calculated. **Note:** `loan.interest_rate` is in percentage. Convert it
+to decimal before using it. 
 
 ```python
 def yearly_amounts(self, yearly_payment):
