@@ -2,8 +2,8 @@
 
 ## Timelines for Grading 
 * The day after the regular deadline: grading process starts
-* Three days after the hard deadline: TAs finish grading
-* Within five days after the hard deadline: grades posted to Canvas and start collecting regrade requests
+* Five days after the hard deadline: TAs finish grading
+* Within one week after the hard deadline: grades posted to Canvas and start collecting regrade requests
     * You can submit regrade requests through the [Project Grading Issues Form](https://forms.gle/G17TFSLdsB51m2r2A) 
     * The regrade requests are only for TA's mistakes in manual grading 
     * Please do not submit any regrade requests until grades are posted to Canvas 
