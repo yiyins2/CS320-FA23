@@ -2,7 +2,7 @@
 
 ## Inheritance
 
-Paste and run the following code:
+Paste and run the following code in a new python notebook called debug.ipynb in your p3 folder:
 
 ```python
 class Parent:
@@ -26,7 +26,7 @@ What do you think will be printed if you call `c.twice()`?  Discuss
 with your group, then run it to find out.
 
 When `self.some_method(...)` is called, and there are multiple methods
-named `some_method` in your program, the type of `self` is what
+named `some_method` in your program, the type of `self` (the original object that is calling the method from the class) is what
 matters for determining which one runs.  It doesn't matter where the
 `self.some_method(...)` is (could be any method).
 
