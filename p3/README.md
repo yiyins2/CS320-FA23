@@ -216,7 +216,7 @@ an attribute)
 `WebSearcher` should have a `table()` method that
 [concatenates](https://pandas.pydata.org/docs/reference/api/pandas.concat.html)
 all the fragments in the order they were visited and returns one big
-DataFrame.  Use `ignore_index=True` when concatenating. Look out for some extra empty data frames (which might add in some extra columns) and think about how you can exclude them.
+DataFrame.  Use `ignore_index=True` when concatenating. 
 
 ### Manual Debugging
 
