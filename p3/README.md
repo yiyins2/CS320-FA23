@@ -100,7 +100,7 @@ This means the value for node `1.txt` is "M", and the children of
 All the files will have two lines like this, with a value on the first
 line, and a comma-separated list of children on the second line.
 
-The `visit_and_get_children` method should read a node file, record its vlaue in `self.order` and return a list of children.
+The `visit_and_get_children` method should read a node file, record its value in `self.order` and return a list of children.
 The `concat_order` method should return all the values concatenated together.  
 
 You could test this in your debug.ipynb notebook.:
@@ -216,7 +216,7 @@ an attribute)
 `WebSearcher` should have a `table()` method that
 [concatenates](https://pandas.pydata.org/docs/reference/api/pandas.concat.html)
 all the fragments in the order they were visited and returns one big
-DataFrame.  Use `ignore_index=True` when concatenating.
+DataFrame.  Use `ignore_index=True` when concatenating. Look out for some extra empty data frames (which might add in some extra columns) and think about how you can exclude them.
 
 ### Manual Debugging
 
@@ -292,7 +292,7 @@ def reveal_secrets(driver, url, travellog):
 
 The function should do the following:
 
-1. generate a password from the "clues" column of the `travellog` DataFrame.  For example, if `travellog` is the big DataFrame built after doing BFS (as shown earlier), the password will start with "17138..."
+1. generate a password from the "clue" column of the `travellog` DataFrame.  For example, if `travellog` is the big DataFrame built after doing BFS (as shown earlier), the password will start with "17138..."
 2. visit `url` with the `driver`
 3. automate typing the password in the box and clicking "GO"
 4. wait until the pages is loaded (perhaps with `time.sleep`)
