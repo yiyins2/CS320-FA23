@@ -154,4 +154,4 @@ what you expect when starting from other nodes.
 ## scrape.py
 
 If you've been doing this work in a notebook, you should now move your
-code to a new module called `scrape.py` in your `cs320-SU23/p3` directory.
+code to a new module called `scrape.py` in your `cs320-FA23/p3` directory.
