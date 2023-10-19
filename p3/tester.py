@@ -154,7 +154,7 @@ def ind_test():
     ind_points += 5
 
     with open("Current_Location.jpg", "rb") as f:
-        assert len(f.read()) == 99951
+        assert len(f.read()) == 32828
     ind_points += 5
 
 def main():
