@@ -2,7 +2,7 @@
 
 ## Corrections/Clarifications
 
-* none yet
+* individual part img url update (Yiyin, 10/18)
 
 ## Overview
 
