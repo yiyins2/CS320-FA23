@@ -501,14 +501,18 @@ def dashboard():
             print(e)
             continue
         if status == "200 OK":
-            svg_points += 5
+            svg_points += 3
 
             if headers.get("Content-Type") == "image/svg+xml" or headers.get("Content-type") == "image/svg+xml":
-                svg_points += 5
+                svg_points += 2
             else:
                 print(headers)
         else:
             print(status)
+            
+    with open("dashboard.svg", "rb") as f:
+        assert len(f.read()) > 0
+    svg_points += 5
 
     return min(10, svg_points)
 

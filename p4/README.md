@@ -1,4 +1,4 @@
-# Project 4: Building a Website Sharing EDGAR Web Logs (under major updates, DO NOT start)
+# Project 4: Building a Website Sharing EDGAR Web Logs 
 
 **Important:** This project is the longest one in this semester. 
 Please do not wait until the last minute to finish it. 
@@ -11,14 +11,14 @@ Please do not wait until the last minute to finish it.
 
 When you're done, you'll hand in a `*.zip` file containing `main.py`, any 
 `.html` files necessary (basically whatever we need to run your website), 
-and `edgar_utils.py`.
+`edgar_utils.py`, and `dashboard.svg`.
 
 You can create a `*.zip` file from the terminal. Let's say you're already in 
 a directory named `p4`. You can run this to create a compressed `p4.zip`
 file alongside your directory by typing in:
 
 ```
-zip ../p4.zip main.py *.html edgar_utils.py
+zip ../p4.zip main.py *.html edgar_utils.py dashboard.svg
 ```
 
 **Important:** make sure your program is named `main.py`. 
@@ -374,6 +374,8 @@ You can add the plot by adding the following line to the `index.html` file
 ```
 <img src="dashboard.svg">
 ```
+To help your TAs grade this plot, please also save this plot as `dashboard.svg` 
+and include it in `p4.zip`. 
 
 #### Important
 
