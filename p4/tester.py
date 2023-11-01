@@ -269,7 +269,7 @@ def has_links():
     links = page.find_all("a", href=True)
     links = [element["href"].split("?")[0] for element in links]
     points = 0
-    for link in ["browse.html", "donate.html", "donate.html"]:
+    for link in ["browse.html", "donate.html", "analysis.html"]:
         if link in links:
             points += 2
         else:
