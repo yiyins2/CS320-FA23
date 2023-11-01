@@ -30,7 +30,7 @@ Run `python3 tester.py` inside of your `p4` directory (your program must be name
 
 In the US, public companies need to regularly file
 various statements and reports to the SEC's (Securities and Exchange
-Commission) EDGAR database.  EDGAR data is publicly available online;
+Commission) EDGAR database.  EDGAR data is publicly availe online;
 furthermore, web requests to EDGAR from around the world are logged
 and published.  EDGAR logs are huge.  Logs for *just one day* might be
 about 250 MB compressed as a .zip (or 2 GB uncompressed!).
@@ -59,7 +59,7 @@ sudo apt install -y python3-rtree
 
 # Group Part (75%)
 
-For this portion of the project, you may collaborate with your group members in any way (even looking at working code). You may also seek help from 320 staff (mentors, TAs, instructor). You may not seek help from other 320 students (outside your group) or anybody outside the course.
+For this portion of the project, you may colorate with your group members in any way (even looking at working code). You may also seek help from 320 staff (mentors, TAs, instructor). You may not seek help from other 320 students (outside your group) or anybody outside the course.
 
 ## Data Format
 Take a look at the list of daily zips and CSV documentation on the EDGAR site:
@@ -272,7 +272,7 @@ something to it or replace something in it.
 
 ## Part 3: creating `edgar_utils.py` module
 
-This part is to be started during [lab todo](../labs/lab10.md). 
+This part is to be started during [lab 10](../labs/EDGAR.md). 
 
 Finish the `edgar_utils.py` module now if you didn't have enough time
 during the scheduled lab.
