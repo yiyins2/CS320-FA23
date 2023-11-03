@@ -1,0 +1,4 @@
+question,prompt,expected
+1,"<p>Q1: how many filings have been accessed by the top ten IPs?</p>","{'54.152.17.ccg': 12562, '183.195.251.hah': 6524, '52.45.218.ihf': 5562, '68.180.231.abf': 5493, '204.212.175.bch': 4708, '103.238.106.gif': 4428, '208.77.215.jeh': 3903, '208.77.214.jeh': 3806, '217.174.255.dgd': 3551, '82.13.163.caf': 3527}"
+2,"<p>Q2: what is the distribution of SIC codes for the filings in docs.zip?</p>","{2834: 40, 6021: 20, 6798: 20, 6022: 20, 1311: 20, 1389: 19, 6211: 17, 6189: 17, 2836: 13, 7389: 11}"
+3,"<p>Q3: what are the most commonly seen street addresses?</p>","{'801 CHERRY STREET\nSUITE 2100\nFORT WORTH TX 76102': 720, '801 CHERRY STREET\nSUITE 2100\nFORT WORTH TX 76102\n817-334-4100': 464, '1114 AVENUE OF THE AMERICAS\n29TH FLOOR\nNEW YORK NY 10036': 356, '1 SANSOME ST\n30TH FL\nSAN FRANCISCO CA 94104': 305}"
