@@ -1,4 +1,4 @@
-# P7: Selling Laptops: Smart Marketing
+# P5: Selling Laptops: Smart Marketing
 
 ## Corrections/Clarifications
 
