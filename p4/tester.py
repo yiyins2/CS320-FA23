@@ -481,8 +481,11 @@ def analysis():
             print(f"{expected_df.at[i, 'prompt']} is not added to analysis.html")
             return points
         student_solution = body[question_idx + 1].strip()[3:-4]
-        assert student_solution == expected_df.at[i, "expected"]
-        points += 5
+        expected_solution = expected_df.at[i, "expected"]
+        if student_solution == expected_solution: 
+            points += 5
+        else: 
+            print(f"Q{i+1}: Actual: {student_solution}, Expected: {expected_solution}")
     return points
     
 @test(points=10)
