@@ -84,7 +84,7 @@ Consult the [Census documentation](https://tigerweb.geo.census.gov/tigerwebmain/
 
 ## Part 2: Predicting Population using Housing Units
 
-You'll need to wait to do the lab before continuing: [lab 13](../labs/SQL.md)
+You'll need to wait to do the lab before continuing: [lab 14](../labs/SQL.md)
 
 ### Feature 2: `HU100` (housing units)
 
@@ -151,9 +151,11 @@ A = np.array([
 ])
 ```
 
+See [lab 14](../labs/counting-cells.md) for an example.
+
 ### Q13: How does Brown County look?
 
-NOTE: in lab, you had to use TIGERweb to get the geodata.  You
+NOTE: in [lab 14](../labs/raster.md), you had to use TIGERweb to get the geodata.  You
 shouldn't do that here because we already did that saved the results
 to `counties.geojson`, which you should use.  Otherwise, this is very
 similar to the lab exercise.
