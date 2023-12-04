@@ -21,3 +21,5 @@
 * [lab 11](./labs/lab11.md)
 * [lab 12](./labs/lab12.md)
 * [lab 13](./labs/lab13.md)
+* [lab 14](./labs/lab14.md)
+* [lab 15](./labs/lab15.md)
